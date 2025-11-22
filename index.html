@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Дэм — лендинги на HTML/CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Дэм — фронтенд-разработчик. Собираю аккуратные лендинги на HTML/CSS для небольших брендов и локального бизнеса." />
+
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Дэм</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Открыть меню">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav class="nav" id="site-nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Обо мне</a></li>
+          <li><a href="#services" class="nav-link">Чем помогаю</a></li>
+          <li><a href="#cases" class="nav-link">Кейсы</a></li>
+          <li><a href="#process" class="nav-link">Процесс</a></li>
+          <li><a href="#pricing" class="nav-link">Бюджеты</a></li>
+          <li><a href="#contacts" class="nav-link">Контакты</a></li>
+        </ul>
+        <a href="https://t.me/Upioupieee" target="_blank" rel="noopener noreferrer" class="btn btn-nav">
+          Написать в Telegram
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-main">
+          <p class="hero-badge">Лендинги под ключ • фронтенд</p>
+          <h1 class="hero-title">
+            Собираю аккуратные лендинги,<br>которые выглядят дороже, чем стоили
+          </h1>
+          <p class="hero-text">
+            Я&nbsp;— Дэм, фронтенд-разработчик. Делаю одностраничные сайты на чистом HTML/CSS:
+            без конструкторов, с нормальной типографикой и&nbsp;адекватным адаптивом под телефон —
+            чтобы вашим клиентам было проще понять продукт и&nbsp;оставить заявку.
+          </p>
+          <div class="hero-actions">
+            <a href="https://t.me/Upioupieee" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              Связаться в Telegram
+            </a>
+            <button class="btn btn-ghost" type="button" onclick="document.querySelector('#cases').scrollIntoView({behavior: 'smooth'})">
+              Посмотреть кейсы
+            </button>
+          </div>
+          <p class="hero-note">
+            Напишите пару строк о продукте&nbsp;— в ответ предложу формат лендинга и примерный бюджет.
+          </p>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="hero-card">
+            <p class="hero-card-label">С чем помогаю</p>
+            <ul class="hero-card-list">
+              <li>Первый внятный сайт для бренда или сервиса</li>
+              <li>Лендинг под рекламу, запуск или акцию</li>
+              <li>Упаковка личного бренда на одной странице</li>
+            </ul>
+          </div>
+
+          <div class="hero-card">
+            <p class="hero-card-label">Кому это особенно полезно</p>
+            <ul class="hero-card-list">
+              <li>Небольшим брендам и продуктам</li>
+              <li>Локальному бизнесу: барбершопы, студии, сервисы</li>
+              <li>Специалистам, которые хотят выглядеть аккуратно онлайн</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section-services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Чем я могу быть полезен</h2>
+          <p class="section-subtitle">
+            Я не продаю «магический дизайн». Я помогаю собрать лендинг, который понятно рассказывает
+            про ваш продукт и не разваливается на мобильном. Всё — на чистом HTML/CSS без тяжёлых конструкторов.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <h3 class="card-title">Запуск продукта</h3>
+            <p class="card-text">
+              Одностраничный сайт под запуск геля, услуги, мини-бренда или онлайн-продукта.
+              Структура, которая ведёт человека от смысла к заявке.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Локальный бизнес</h3>
+            <p class="card-text">
+              Барбершопы, студии, салоны, небольшие сервисы. Акцент на атмосфере, понятных услугах
+              и удобных контактах, чтобы не терять заявки из поиска и соцсетей.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Личный бренд</h3>
+            <p class="card-text">
+              Одностраничные сайты для специалистов: кто вы, чем полезны, какие есть кейсы
+              и как с вами связаться — без хаоса в ссылках и сторис.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases" class="section section-cases">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Кейсы</h2>
+          <p class="section-subtitle">
+            Сейчас в портфолио два концепта. Это не «фантазии в фигме», а реальные одностраничники
+            на доменах — их можно открыть с телефона и посмотреть, как всё ведёт к действию.
+          </p>
+        </div>
+
+        <div class="cases-list">
+          <article class="case">
+            <div class="case-header">
+              <p class="case-tag">Концепт · продуктовый бренд</p>
+              <h3 class="case-title">CLOZ — лендинг премиального геля для душа</h3>
+            </div>
+            <p class="case-text">
+              Задача — показать продукт как что-то тёплое, уверенное и «выше масс-маркета».
+              Лендинг строится вокруг ощущения от продукта: визуал, текст и структура работают
+              на одно впечатление.
+            </p>
+            <div class="case-details">
+              <p class="case-subtitle">Что сделано:</p>
+              <ul class="case-list">
+                <li>логичная структура: «продукт → ощущения → состав → отзывы»;</li>
+                <li>акцент на визуальном ощущении бренда и упаковке;</li>
+                <li>адаптивная верстка под мобильные устройства без потери атмосферы.</li>
+              </ul>
+            </div>
+            <a href="https://cloz-site.vercel.app/" target="_blank" rel="noopener noreferrer" class="case-link">
+              Открыть сайт CLOZ
+            </a>
+          </article>
+
+          <article class="case">
+            <div class="case-header">
+              <p class="case-tag">Концепт · локальный бизнес</p>
+              <h3 class="case-title">Firmach — лендинг барбершопа</h3>
+            </div>
+            <p class="case-text">
+              Цель — дать ощущение места, куда хочется зайти, а не просто «ещё один барбершоп».
+              Сайт показывает атмосферу, мастеров и снимает вопросы по ценам и записи.
+            </p>
+            <div class="case-details">
+              <p class="case-subtitle">Что сделано:</p>
+              <ul class="case-list">
+                <li>страница с фокусом на атмосфере и стиле заведения;</li>
+                <li>структура с блоками услуг, преимуществ и формата работы;</li>
+                <li>контакты и адрес, которые удобно использовать с телефона.</li>
+              </ul>
+            </div>
+            <a href="https://firmach-landing-z11b.vercel.app/" target="_blank" rel="noopener noreferrer" class="case-link">
+              Открыть сайт Firmach
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section section-process">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Как это выглядит в работе</h2>
+          <p class="section-subtitle">
+            Без бесконечных кругов согласований. Есть понятная схема, по которой мы двигаемся
+            к рабочему лендингу.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Короткий созвон или переписка</h3>
+            <p class="step-text">
+              Вы рассказываете, что за продукт и зачем нужен лендинг. Скидываете примеры сайтов,
+              которые нравятся. Я задаю конкретные вопросы, чтобы не угадывать.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Структура и сценарий страницы</h3>
+            <p class="step-text">
+              Предлагаю структуру: какие блоки будут, в каком порядке, где ставим акценты.
+              На этом шаге понимаем, как лендинг будет вести человека к заявке.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Верстка и адаптив</h3>
+            <p class="step-text">
+              Собираю лендинг на HTML/CSS, добавляю минимальный JS там, где это оправдано.
+              Проверяю отображение на мобильных и десктопах.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-number">4</div>
+            <h3 class="step-title">Запуск и финальные правки</h3>
+            <p class="step-text">
+              Помогаю выкатить сайт на Vercel или GitHub Pages. Вношу адекватные правки
+              по текстам и блокам после запуска.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section section-pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Бюджеты</h2>
+          <p class="section-subtitle">
+            Финальная стоимость зависит от объёма, сроков и сложности. Ниже — ориентиры,
+            чтобы понимать порядок цифр.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h3 class="pricing-title">Базовый лендинг</h3>
+            <p class="pricing-price">от 15&nbsp;000&nbsp;₽</p>
+            <p class="pricing-text">
+              Структура до ~6&nbsp;блоков, аккуратная верстка, адаптив под мобильные,
+              базовые анимации. Формат «нормальный первый сайт под продукт или услугу».
+            </p>
+          </article>
+
+          <article class="pricing-card">
+            <h3 class="pricing-title">Лендинг с расширенной структурой</h3>
+            <p class="pricing-price">от 25&nbsp;000&nbsp;₽</p>
+            <p class="pricing-text">
+              Больше блоков, отдельные секции под сценарии, кастомные элементы и анимации.
+              Подойдёт, если нужно глубже объяснить продукт или показать несколько офферов.
+            </p>
+          </article>
+        </div>
+
+        <p class="pricing-note">
+          После короткого обсуждения задачи смогу назвать конкретный диапазон и предложить,
+          как уложиться в ваш бюджет.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-about">
+      <div class="container about-inner">
+        <div class="about-main">
+          <h2 class="section-title">Пара слов обо мне</h2>
+          <p class="about-text">
+            Я&nbsp;— Дэм, мне 18 лет, я начинающий фронтенд-разработчик. Сейчас фокусируюсь на лендингах:
+            аккуратная верстка на HTML/CSS, понятная структура и работающие сценарии для небольших брендов
+            и локального бизнеса.
+          </p>
+          <p class="about-text">
+            Вместо «красивых картинок ради картинок» мне важнее, чтобы сайт выглядел собранным,
+            держал внимание и отвечал на вопросы клиента. Параллельно я прокачиваю JavaScript
+            и двигаюсь в сторону более сложных интерфейсов — но основу всегда делаю аккуратно.
+          </p>
+          <p class="about-text">
+            Сейчас я собираю пул первых стабильных заказчиков. Это значит больше вовлечённости
+            в каждый проект и живой диалог без корпоративной бюрократии.
+          </p>
+        </div>
+
+        <aside class="about-side">
+          <div class="about-highlight">
+            <p class="about-highlight-label">Как со мной обычно комфортно работать</p>
+            <ul class="about-list">
+              <li>говорю на простом языке, без «джуна» и «сеньора» в каждом предложении;</li>
+              <li>держу в фокусе задачу бизнеса, а не только пиксели;</li>
+              <li>не навязываю лишний функционал, когда можно обойтись проще.</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section id="contacts" class="section section-contacts">
+      <div class="container contacts-inner">
+        <div class="contacts-main">
+          <h2 class="section-title">Контакты</h2>
+          <p class="section-subtitle">
+            Напишите одним сообщением: что за продукт, зачем нужен лендинг, какой пример страницы вам нравится
+            и на какой срок вы смотрите. В ответ — предложу формат работы и диапазон по бюджету.
+          </p>
+
+          <div class="contacts-actions">
+            <a href="https://t.me/Upioupieee" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+              Написать в Telegram
+            </a>
+            <p class="contacts-note">
+              Telegram&nbsp;— самый быстрый способ связаться. Если удобнее по почте — она ниже.
+            </p>
+          </div>
+
+         <div class="contacts-extra">
+  <p>Почта: <a href="mailto:dmitriigorshenin2@gmail.com
+">dmitriigorshenin2@gmail.com
+</a></p>
+  <p>Instagram: <a href="https://www.instagram.com/dude_officall/" target="_blank" rel="noopener noreferrer">@dude_officall</a></p>
+</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">© 2025 Дэм. Лендинги на HTML/CSS.</p>
+      <button class="footer-link" type="button" onclick="document.querySelector('#hero').scrollIntoView({behavior: 'smooth'})">
+        Наверх ↑
+      </button>
+    </div>
+  </footer>
+
+  <script>
+    // Мобильное меню
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('#site-nav');
+
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+
+      // Закрываем меню при клике по ссылке
+      nav.querySelectorAll('a.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          if (nav.classList.contains('nav-open')) {
+            nav.classList.remove('nav-open');
+            navToggle.classList.remove('nav-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
